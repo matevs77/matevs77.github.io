@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+h2 {
+    color: #333;
+}
+
+.project {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Adicione um estilo para a navegação responsiva */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    #about.animate,
+    #projects.animate,
+    #contact.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
